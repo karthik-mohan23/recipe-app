@@ -10,7 +10,7 @@ function Home() {
           <Link href={`/about`}>Navigate to about page</Link>
         </li>
         <li>
-          <Link href={`/`}>Navigate to home page</Link>
+          <Link href={`/account`}>Navigate to account page</Link>
         </li>
         <li>
           <Link href={`/account/membership`}>Navigate to membership page</Link>
