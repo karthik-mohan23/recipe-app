@@ -29,7 +29,7 @@ async function RecipeDetails({ params: { id } }: RecipeDetailsProps) {
         <h4 className="text-2xl pb-5 underline">Ingredients</h4>
         <ul>
           {singleRecipeDetails.ingredients.map((items, index) => (
-            <li>
+            <li key={index}>
               <span>{index + 1}.</span> {items}
             </li>
           ))}
@@ -39,7 +39,7 @@ async function RecipeDetails({ params: { id } }: RecipeDetailsProps) {
         <h4 className="text-2xl pb-5 underline">Instructions</h4>
         <ul>
           {singleRecipeDetails.instructions.map((items, index) => (
-            <li>
+            <li key={index}>
               <span>{index + 1}.</span> {items}
             </li>
           ))}
